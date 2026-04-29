@@ -7,9 +7,9 @@
 
 /* --- GLOBAL --- */
 body {
-  background: linear-gradient(135deg, #1a1a2e, #16213e, #0f3460);
+  background: linear-gradient(135deg, #1e1e2f, #151521, #0f0f1a);
   background-size: 300% 300%;
-  animation: gradientMove 12s ease infinite;
+  animation: bgMove 12s ease infinite;
   color: #f5f5f5;
   font-family: "Inter", Arial, sans-serif;
   display: flex;
@@ -19,7 +19,7 @@ body {
 }
 
 /* Animation du fond */
-@keyframes gradientMove {
+@keyframes bgMove {
   0% { background-position: 0% 50%; }
   50% { background-position: 100% 50%; }
   100% { background-position: 0% 50%; }
@@ -83,9 +83,4 @@ button:hover {
   button {
     width: 80%;
   }
-
-  .quick-buttons button {
-    width: 45%;
-  }
 }
-
