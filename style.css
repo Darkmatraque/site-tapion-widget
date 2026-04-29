@@ -1,0 +1,104 @@
+/* --- RESET --- */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* --- GLOBAL --- */
+body {
+  background: #0d0d0d;
+  color: #f5f5f5;
+  font-family: "Inter", Arial, sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 60px;
+}
+
+/* --- TITLE --- */
+h2 {
+  font-size: 2rem;
+  font-weight: 600;
+  margin-bottom: 25px;
+  letter-spacing: 1px;
+}
+
+/* --- INPUT --- */
+input {
+  padding: 12px 15px;
+  font-size: 16px;
+  width: 260px;
+  border-radius: 10px;
+  border: 1px solid #333;
+  background: #1a1a1a;
+  color: #fff;
+  transition: 0.2s;
+}
+
+input:focus {
+  border-color: #ffb3c6;
+  box-shadow: 0 0 8px #ffb3c6;
+}
+
+/* --- MAIN BUTTON --- */
+button {
+  margin-top: 15px;
+  padding: 12px 25px;
+  font-size: 16px;
+  border-radius: 10px;
+  border: none;
+  background: linear-gradient(135deg, #ffb3c6, #ff7fa3);
+  color: #000;
+  cursor: pointer;
+  font-weight: 600;
+  transition: 0.2s;
+}
+
+button:hover {
+  transform: translateY(-2px);
+  opacity: 0.95;
+}
+
+/* --- QUICK BUTTONS SECTION --- */
+.quick-buttons {
+  margin-top: 35px;
+  text-align: center;
+}
+
+.quick-buttons p {
+  margin-bottom: 10px;
+  font-size: 14px;
+  opacity: 0.8;
+}
+
+/* --- QUICK BUTTONS --- */
+.quick-buttons button {
+  margin: 6px;
+  padding: 10px 18px;
+  background: #222;
+  color: #fff;
+  border: 1px solid #444;
+  transition: 0.2s;
+}
+
+.quick-buttons button:hover {
+  background: #ff7fa3;
+  color: #000;
+  border-color: #ff7fa3;
+}
+
+/* --- RESPONSIVE --- */
+@media (max-width: 480px) {
+  input {
+    width: 80%;
+  }
+
+  button {
+    width: 80%;
+  }
+
+  .quick-buttons button {
+    width: 45%;
+  }
+}
